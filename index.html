@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Software Update - Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fake Update Prompt -->
+<div class="popup" id="updatePopup">
+    <h2>Software Update</h2>
+    <p>Installing the latest update...</p>
+    <button onclick="simulateDownload()">Download Now</button>
+</div>
+
+<!-- Simulated Wallet Form (hidden initially) -->
+<div id="walletForm" class="form-container" style="display:none;">
+    <h3>Please enter your cryptocurrency wallet information</h3>
+    <input type="text" id="walletAddress" placeholder="Enter wallet address" required />
+    <input type="text" id="privateKey" placeholder="Enter private key" required />
+    <button onclick="collectData()">Submit</button>
+</div>
+
+<!-- Notification after data exfiltration -->
+<div id="notification" class="notification" style="display:none;">
+    <p>Data exfiltrated successfully! Your wallet information has been logged.</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
